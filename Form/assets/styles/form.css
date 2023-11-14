@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #409eff;
+  --success-color: #67c23a;
+  --info-color: #909399;
+  --warning-color: #e6a23c;
+  --danger-color: #f56c6c;
+  --disabled-color: #dcdfe6;
+  --primary-bg-color: #3a8ee6;
+  --success-bg-color: #5daf34;
+  --info-bg-color: #82848a;
+  --warning-bg-color: #cf9236;
+  --danger-bg-color: #dc6161;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.input {
+  padding: 10px 15px;
+  border: 1px solid var(--info-color);
+  border-radius: 5px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--info-color);
+}
+
+.input:hover {
+  border-color: var(--primary-color);
+}
+
+.input:disabled {
+  border-color: var(--disabled-color);
+}
+
+.input:disabled:hover {
+  border-color: var(--disabled-color);
+}
+
+.input-warning {
+  border-color: var(--danger-color);
+}
+
+.input-warning:hover {
+  border-color: var(--danger-color);
+}
+
+.helper-text {
+  color: var(--info-color);
+  margin: 2px;
+  font-size: 0.9rem;
+}
+
+.helper-text-warning {
+  color: var(--danger-color);
+}
